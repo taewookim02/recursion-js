@@ -17,6 +17,8 @@
   <script src="./js/productOfArray.js" defer></script>
   <script src="./js/contains.js" defer></script>
   <script src="./js/totalIntegers.js" defer></script>
+  <script src="./js/sumSquares.js" defer></script>
+
 </head>
 
 <body>
@@ -124,6 +126,28 @@
       <button class="totalIntegers-btn">totalIntegers</button>
       <br>
       <span class="totalIntegers-result">result: </span>
+    </form>
+    <br>
+    <hr>
+    <form class="sumSquares-form">
+      <p class="all-desc">function <strong>sumSquares(array)</strong> that sums squares of numbers in list that may
+        contain more lists.</p>
+      <pre>
+        var l = [1,2,3]; 
+        console.log(SumSquares(l)); // 1 + 4 + 9 = 14
+        
+        l = [[1,2],3]; 
+        console.log(SumSquares(l)); // 1 + 4 + 9 = 14
+        
+        l = [[[[[[[[[1]]]]]]]]] 
+        console.log(SumSquares(l)); // 1 = 1
+        
+        l = [10,[[10],10],[10]] 
+        console.log(SumSquares(l)); // 100 + 100 + 100 + 100 = 400
+      </pre>
+      <button class="sumSquares-btn">sumSquares</button>
+      <br>
+      <span class="sumSquares-result">result: </span>
     </form>
     <br>
     <hr>
