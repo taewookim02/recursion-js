@@ -1,7 +1,6 @@
 (() => {
   const factorial = (n) => {
     if (n === 1) {
-      m;
       return 1;
     }
     return n * factorial(n - 1);
