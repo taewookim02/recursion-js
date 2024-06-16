@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+(() => {
   const factorial = (n) => {
     if (n === 1) {
+      m;
       return 1;
     }
     return n * factorial(n - 1);
@@ -18,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
       resultTag.innerHTML = `error: ${error}`;
     }
   });
-});
+})();

@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.
+(() => {
   function sumTo(n) {
     if (n == 1) {
       return n;
@@ -21,4 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sumToForm = document.querySelector(".sumTo-form");
   sumToForm.addEventListener("submit", handleSumTo);
-});
+})();

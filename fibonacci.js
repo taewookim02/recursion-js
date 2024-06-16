@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (e) => {
+(() => {
   const fib = (n) => {
     if (n === 0) return 0;
     if (n === 1) return 1;
@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
       resultTag.innerHTML = `error: ${error}`;
     }
   });
-});
+})();
