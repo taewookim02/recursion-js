@@ -7,16 +7,27 @@
   <title>Recursion</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./sumTo.js" defer></script>
+  <script src="./factorial.js" defer></script>
 </head>
 
 <body>
   <h1>Recursion</h1>
-  <div class="sumTo">
+  <div class="container">
+    <hr>
     <form class="sumTo-form">
       <p class="sumTo-desc">function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.</p>
       <input type="number" min="1" class="sumTo-input" value="1">
       <button class="sumTo-btn">SumTo</button>
       <span class="sumTo-result">result: </span>
+    </form>
+    <br>
+    <hr>
+    <form class="factorial-form">
+      <p class="factorial-desc">function factorial(n) that calculates n! using recursive calls.</p>
+      <input type="number" min="1" class="factorial-input" value="1">
+      <button class="factorial-btn">Factorial</button>
+      <br>
+      <span class="factorial-result">result: </span>
     </form>
   </div>
 </body>

@@ -6,13 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     return n + sumTo(n - 1);
   }
-
-  const sumToForm = document.querySelector(".sumTo-form");
-  sumToForm.addEventListener("submit", (e) => {
+  const handleSumTo = (e) => {
     e.preventDefault();
     const val = +sumToForm.querySelector(".sumTo-input").value;
     const resultTag = sumToForm.querySelector(".sumTo-result");
-    const result = sumTo(val);
-    resultTag.innerHTML = `result: ${result}`;
-  });
+
+    try {
+      const result = sumTo(val);
+      resultTag.innerHTML = `result: ${result}`;
+    } catch (error) {
+      resultTag.innerHTML = `error: ${error}`;
+    }
+  };
+
+  const sumToForm = document.querySelector(".sumTo-form");
+  sumToForm.addEventListener("submit", handleSumTo);
 });
