@@ -1,0 +1,13 @@
+.sumTo-form {
+  display: grid;
+  grid-template-columns: min-content min-content;
+}
+
+.sumTo-result,
+.sumTo-desc {
+  grid-column: span 2;
+}
+
+button {
+  cursor: pointer;
+}
