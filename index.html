@@ -15,6 +15,7 @@
   <script src="./js/fibonacci.js" defer></script>
   <script src="./js/linkedList.js" defer></script>
   <script src="./js/reversePrint.js" defer></script>
+  <script src="./js/collatz.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
   <div class="container">
     <hr>
     <form class="sumTo-form">
-      <p class="sumTo-desc">function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.</p>
+      <p class="sumTo-desc">function <strong>sumTo(n)</strong> that calculates the sum of numbers 1 + 2 + ... + n.</p>
       <input type="number" min="1" class="sumTo-input" value="1">
       <button class="sumTo-btn">SumTo</button>
       <br>
@@ -31,7 +32,7 @@
     <br>
     <hr>
     <form class="factorial-form">
-      <p class="factorial-desc">function factorial(n) that calculates n! using recursive calls.</p>
+      <p class="factorial-desc">function <strong>factorial(n)</strong> that calculates n! using recursive calls.</p>
       <input type="number" min="1" class="factorial-input" value="1">
       <button class="factorial-btn">Factorial</button>
       <br>
@@ -40,11 +41,21 @@
     <br>
     <hr>
     <form class="fibonacci-form">
-      <p class="fibonacci-desc">function fib(n) that returns the n-th Fibonacci number.</p>
+      <p class="fibonacci-desc">function <strong>fib(n)</strong> that returns the n-th Fibonacci number.</p>
       <input type="number" min="1" class="fibonacci-input" value="1">
       <button class="fibonacci-btn">Fibonacci</button>
       <br>
       <span class="fibonacci-result">result: </span>
+    </form>
+    <br>
+    <hr>
+    <form class="collatz-form">
+      <p class="collatz-desc">function <strong>collatz(n)</strong> that calculates how many steps it takes to get to 1.
+      </p>
+      <input type="number" min="1" class="collatz-input" value="1">
+      <button class="collatz-btn">Collatz</button>
+      <br>
+      <span class="collatz-result">result: </span>
     </form>
     <br>
     <hr>
@@ -92,6 +103,7 @@
       <br>
       <span class="printRevList-result">result: </span>
     </div>
+
   </div>
 </body>
 
