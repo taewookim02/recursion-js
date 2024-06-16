@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recursion</title>
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    button {
+      cursor: pointer;
+    }
+  </style>
   <script src="./sumTo.js" defer></script>
   <script src="./factorial.js" defer></script>
+  <script src="./fibonacci.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +23,7 @@
       <p class="sumTo-desc">function sumTo(n) that calculates the sum of numbers 1 + 2 + ... + n.</p>
       <input type="number" min="1" class="sumTo-input" value="1">
       <button class="sumTo-btn">SumTo</button>
+      <br>
       <span class="sumTo-result">result: </span>
     </form>
     <br>
@@ -28,6 +34,15 @@
       <button class="factorial-btn">Factorial</button>
       <br>
       <span class="factorial-result">result: </span>
+    </form>
+    <br>
+    <hr>
+    <form class="fibonacci-form">
+      <p class="fibonacci-desc">function fib(n) that returns the n-th Fibonacci number.</p>
+      <input type="number" min="1" class="fibonacci-input" value="1">
+      <button class="fibonacci-btn">Fibonacci</button>
+      <br>
+      <span class="fibonacci-result">result: </span>
     </form>
   </div>
 </body>
