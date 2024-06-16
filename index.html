@@ -13,6 +13,7 @@
   <script src="./js/sumTo.js" defer></script>
   <script src="./js/factorial.js" defer></script>
   <script src="./js/fibonacci.js" defer></script>
+  <script src="./js/linkedList.js" defer></script>
 </head>
 
 <body>
@@ -44,6 +45,30 @@
       <br>
       <span class="fibonacci-result">result: </span>
     </form>
+    <br>
+    <hr>
+    <div class="print-list">
+      <p>function to print list items one by one</p>
+      <pre>
+      let list = {
+        value: 1,
+        next: {
+          value: 2,
+          next: {
+            value: 3,
+            next: {
+              value: 4,
+              next: null,
+            },
+          },
+        },
+      };
+      </pre>
+      <button class="printList-btn">PrintList</button>
+      <br>
+      <span class="printList-result">result: </span>
+
+    </div>
   </div>
 </body>
 
